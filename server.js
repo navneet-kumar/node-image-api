@@ -1,13 +1,18 @@
 const http = require("http");
 const app = require("./app");
-const consumer = require("./src/consumer");
+const cons = require("./src/consumer");
 const Queue = require("./src/queue");
 const port = process.env.PORT || 3000;
 
-console.log("Processing queue instantiated...");
 new Queue().getInstance();
+console.log("Processing queue instantiated...");
+
+const consumer = new cons();
+consumer.consume();
 console.log("Consumer instantiated...");
-new consumer().consume();
 
 const server = http.createServer(app);
 server.listen(port);
+console.log(`Server started listening on ${port} ...`);
+
+module.exports = {server, consumer};
