@@ -43,7 +43,7 @@ npm test
 ```
 
 ### architecture
-[Architecture diagram](docs/architecture.png)
+![Architecture diagram](docs/architecture.png)
 
 ### Host this service
 
