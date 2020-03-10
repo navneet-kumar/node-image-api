@@ -43,7 +43,7 @@ npm test
 ```
 
 ### architecture
-1. include queue-based workers
+[Architecture diagram](docs/architecture.png)
 
 ### Host this service
 
