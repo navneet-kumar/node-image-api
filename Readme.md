@@ -45,10 +45,8 @@ npm test
 ### architecture
 ![Architecture diagram](docs/architecture.png)
 
-### Host this service
-
-
 ### corner cases
+- Current api only supports scale down and scale up is not supported i.e. 67x67 won't be scaled up to 100x100. 
 
 ### improvements
 - [ ] add config post parameter and externalise and custom configuration so that user can decide the output dimension (100x100), scaling, [e.t.c](https://sharp.pixelplumbing.com/api-resize#parameters)
